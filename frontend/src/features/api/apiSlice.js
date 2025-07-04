@@ -3,8 +3,8 @@ import { BASE_URL } from "./endpoints";
 
 // Configure fetchBaseQuery to send cookies
 const baseQuery = fetchBaseQuery({
-  baseUrl: BASE_URL,
-  credentials: "include", // ✅ Required to send session cookie
+  baseUrl: "https://finance-tracker-x4o2.onrender.com/api/v1",
+  credentials: "include", // ✅ Required for sending cookies
   prepareHeaders: (headers) => {
     headers.set("Content-Type", "application/json");
     return headers;
