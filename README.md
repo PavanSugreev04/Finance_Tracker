@@ -50,7 +50,7 @@ Follow these steps to set up Spend Smart on your local machine:
 ### Clone the repository:
 
 ```bash
-git clone https://github.com/SaxenaShourya/spend-smart.git
+https://github.com/PavanSugreev04/Finance_Tracker.git
 ```
 
 ### Make the .env file in backend directory
@@ -66,7 +66,7 @@ cd backend
 ```bash
 # .env.example
 PORT=3000
-MONGO_URI=mongodb://localhost:27017/spend_smart
+MONGO_URI=mongodb://localhost:8080/finance_tracker
 JWT_SECRET_KEY=your_secret_key_here
 NODE_ENV=development
 ENCRYPTION_SALT=10
