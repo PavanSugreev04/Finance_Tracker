@@ -20,7 +20,7 @@ const app = express();
 // ✅ Simplified CORS setup
 const allowedOrigins = [
   "http://localhost:8080",
-  "https://spend-smart-dev.vercel.app",
+  "https://finance-tracker-navy-iota.vercel.app",
 ];
 app.use((req, res, next) => {
   console.log("Cookies: ", req.cookies); // 🐞 Log cookie presence
@@ -29,7 +29,7 @@ app.use((req, res, next) => {
 app.use(cors({
   origin: [
     "http://localhost:8080", // Local frontend
-    "https://spend-smart-dev.vercel.app", // Vercel frontend
+    "https://finance-tracker-navy-iota.vercel.app", // Vercel frontend
   ],
   credentials: true, // ✅ allow cookies
 }));
