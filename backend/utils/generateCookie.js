@@ -7,9 +7,9 @@ const generateCookie = (res, userId) => {
 
   res.cookie("session", token, {
     httpOnly: true,
-    secure: process.env.NODE_ENV === "production",
-    sameSite: process.env.NODE_ENV === "production" ? "none" : "lax",
-    maxAge: 30 * 24 * 60 * 60 * 1000,
+    secure: true, // ✅ needed for HTTPS
+    sameSite: "None", // ✅ needed for cross-site cookie from Vercel → Render
+    maxAge: 30 * 24 * 60 * 60 * 1000, // 30 days
   });
 };
 
