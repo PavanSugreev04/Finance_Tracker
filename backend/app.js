@@ -27,11 +27,10 @@ app.use((req, res, next) => {
   next();
 });
 app.use(cors({
-  origin: [
-    "http://localhost:8080", // Local frontend
-    "https://finance-tracker-navy-iota.vercel.app", // Vercel frontend
-  ],
-  credentials: true, // ✅ allow cookies
+  origin: allowedOrigins,
+  credentials: true,
+  methods: ["GET", "POST", "PUT", "DELETE"],
+  allowedHeaders: ["Content-Type", "Authorization"],
 }));
 
 
