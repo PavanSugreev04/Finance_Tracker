@@ -1,5 +1,5 @@
 # The name of the workflow.
-name: Ci/cd pipeline for spend smart
+name: Ci/cd pipeline for finance tracker
 
 # Run the workflow when code is pushed to the main branch
 on:
