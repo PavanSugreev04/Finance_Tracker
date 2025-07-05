@@ -3,7 +3,7 @@ import { BASE_URL } from "./endpoints";
 
 // Configure fetchBaseQuery to send cookies
 const baseQuery = fetchBaseQuery({
-  baseUrl: BASE_URL,
+  baseUrl: import.meta.env.VITE_BACKEND_API_URL,
   credentials: "include", // ✅ Required for sending cookies
   prepareHeaders: (headers) => {
     headers.set("Content-Type", "application/json");
