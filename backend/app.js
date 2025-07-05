@@ -35,9 +35,10 @@ app.use(cors({
 
 
 // ✅ Required middlewares
+app.use(cookieParser());
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
-app.use(cookieParser());
+
 
 // ✅ Routes
 app.use("/api/v1/users", userRoutes);
